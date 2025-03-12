@@ -4,10 +4,11 @@ import React from 'react';
 import Bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cards from './components/Cards';
+import "@fontsource/quicksand";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{fontFamily: "Quicksand"}}>
       <section className="HeroSection">
         <h1 className='text-warning'>Hero</h1>
       </section>
