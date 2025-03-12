@@ -41,7 +41,7 @@ function App() {
         </div>
 
         <div className='graphlowerH'>
-          <div className="smallGraphs" >
+          <div className="smallGraph" >
             <Row className="justify-content-center">
               <div>
                 <div className= "doughnutChart">
@@ -52,7 +52,7 @@ function App() {
             </Row>
           </div>
 
-          <div className="smallGraphs">
+          <div className="smallGraph2">
             <Row className="justify-content-center">
               <div>
                 <div className= "doughnutChart">
