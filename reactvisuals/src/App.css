@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+
+#TitleSection{
+  width: 80%;
+  margin: auto;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #72091F;
+  padding-bottom: 20px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none; 
@@ -28,6 +38,69 @@
   color: #61dafb;
 }
 
+.HeroSection{
+  background-color: #61060e;
+}
+
+.cardSection{
+  background-color: #E7DAE3;
+  padding-bottom: 150px;
+}
+
+.dataAnalysisSection{
+  background-color: #605661;
+  padding-bottom: 200px;
+}
+
+.data-Section-Title{
+  padding-top: 100px;
+}
+
+.card-Section-Title{
+  padding-top: 150px;
+}
+
+.cards{
+  padding-top: 40px;
+  width: 80%;
+  margin: auto;
+}
+
+.smallGraphs{
+  width: 1500px;
+  margin: auto;
+  
+}
+
+#bigGraph{
+  width: 70%;
+  background-color: #282c34;
+  margin: auto;
+  border-radius: 32px;
+  margin-top: 80px;
+  padding: 50px;
+}
+
+#smallGraph{
+  width: 200px;
+  background-color: #282c34;
+  border-radius: 32px;
+  margin-top: 80px;
+  padding: 50px;
+}
+
+.homeCards{
+  box-shadow: 10px 10px 5px #282c34;
+  transition: transform 0.3s;
+}
+
+.homeCards:hover{
+  box-shadow: 10px 10px 5px #282c34;
+  border-width: 2px;
+  border-color: #282c34;
+  transform: scale(1.02);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +108,113 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+  background-color: #E7DAe3;
+}
+
+
+/*hero*/
+
+.hero{
+  padding: 70px 200px;
+  padding-bottom: 100px;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #E7DAE3;
+  border-radius: 10px;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #2c2c2c;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #2c2c2c;
+  width: 80%;
+  margin: auto;
+}
+
+.hero-image {
+  max-width: 40%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block; /* Ensure the image is a block-level element */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/*radar*/
+
+/* Style for the Card container */
+.IASBody {
+  width: 1000px;
+  background-color: #605661; /* Dark background for the card */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add some padding */
+  box-shadow: 0 4px 8px #72091f; /* Add a subtle shadow */
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+/* Style for the Card title */
+.IAS-title {
+  color: white; /* White text color */
+  font-size: 24px; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center-align the title */
+  margin-bottom: 20px; /* Add some space below the title */
+}
+
+/* Style for the radar chart container */
+.IAS-container {
+  width: 100%; /* Full width */
+  height: 700px; /* Fixed height for the chart */
+  margin: 0 auto; /* Center the container */
+  position: relative; /* Ensure proper positioning */
+}
+
+/* Style for the radar chart canvas */
+canvas {
+  width: 100% !important; /* Ensure the chart takes full width */
+  height: 100% !important; /* Ensure the chart takes full height */
+}
+
+/* Additional styles for the chart elements */
+/* Adjust the grid and angle lines */
+.chartjs-render-monitor .angle-line {
+  stroke: rgba(255, 255, 255, 0.2); /* Lighter grid lines */
+}
+
+/* Style for the point labels */
+.chartjs-render-monitor .point-label {
+  color: white; /* White text for labels */
+  font-size: 14px; /* Adjust font size */
+}
+
+/* Style for the legend */
+.chartjs-render-monitor .legend {
+  color: white; /* White text for legend */
+  font-size: 16px; /* Adjust font size */
+}
+
+/* Style for the tooltip */
+.chartjs-tooltip {
+  background-color: rgba(15, 113, 115, 0.9); /* Tooltip background color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Add some padding */
+  color: white; /* White text for tooltip */
+  font-size: 14px; /* Adjust font size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
 }
