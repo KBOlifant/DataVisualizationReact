@@ -39,7 +39,7 @@
 }
 
 .HeroSection{
-  background-color: #61060e;
+  background-color: #4d060f;
 }
 
 .cardSection{
@@ -97,7 +97,7 @@
 .homeCards:hover{
   box-shadow: 10px 10px 5px #282c34;
   border-width: 2px;
-  border-color: #282c34;
+  border-color: #52000e;
   transform: scale(1.02);
 }
 
