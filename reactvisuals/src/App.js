@@ -5,12 +5,16 @@ import Bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cards from './components/Cards';
 import "@fontsource/quicksand";
+import HeroSection from './components/hero';
+import RadarSection from './components/radar';
 
 function App() {
   return (
     <div className="App" style={{fontFamily: "Quicksand"}}>
       <section className="HeroSection">
-        <h1 className='text-warning'>Hero</h1>
+        <div className="hero">
+          <HeroSection />
+        </div>
       </section>
 
       <section className="cardSection">
@@ -29,7 +33,9 @@ function App() {
         </div>
         
         <div className="bigGraph">
-
+          <div className="radar">
+            <RadarSection />
+          </div>
         </div>
         <div className="smallGraph">
 
