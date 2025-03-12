@@ -336,3 +336,18 @@ canvas {
   font-size: 14px; /* Adjust font size */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
 }
+
+.doughnut-charts-container {
+  display: flex;
+  padding-top: 100px;
+  justify-content: space-around; /* Adjusts the space between the charts */
+}
+
+.doughnutChart{
+  width: 200px;
+  height: 400px;
+  background-color: #282c34;
+  border-radius: 32px;
+  margin-top: 80px;
+  padding: 50px;
+}
