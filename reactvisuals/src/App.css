@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+
+#TitleSection{
+  width: 80%;
+  margin: auto;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #72091F;
+  padding-bottom: 20px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none; 
@@ -64,6 +74,18 @@
   border-radius: 32px;
   margin-top: 80px;
   padding: 200px;
+}
+
+.homeCards{
+  box-shadow: 10px 10px 5px #282c34;
+  transition: transform 0.3s;
+}
+
+.homeCards:hover{
+  box-shadow: 10px 10px 5px #282c34;
+  border-width: 2px;
+  border-color: #282c34;
+  transform: scale(1.02);
 }
 
 @keyframes App-logo-spin {

@@ -16,10 +16,10 @@ const CardInfo = () => {
   
     const displayCard = (card, index) => {
       return(
-        <Card className='homeCards' style={{ width: '18rem', borderRadius: '20px', backgroundColor: "#72091F"}} key={index}>
+        <Card className='homeCards' style={{ width: '18rem', borderRadius: '20px', backgroundColor: "#605661"}} key={index}>
           <Card.Img variant="top" src={card.image} className='mt-3 rounded-4' style={{ height: '180px'}} />
           <Card.Body>
-            <Card.Title className='text-white'>{card.title}</Card.Title>
+            <Card.Title className='text-white' style={{fontWeight: "900"}}>{card.title}</Card.Title>
             <Card.Text className='text-white'>
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
@@ -29,7 +29,7 @@ const CardInfo = () => {
       )
     }
   
-    return <Row className='Cards justify-content-md-center flex-wrap' style={{gap: '50px'}}>{cardDetails.map(displayCard)}</Row>
+    return <Row className='Cards justify-content-md-center flex-wrap' style={{gap: '50px', textAlign: "start"}}>{cardDetails.map(displayCard)}</Row>
   }
   
   export default CardInfo;
