@@ -40,11 +40,13 @@ function App() {
             <RadarSection />
           </div>
         </div>
-        <div className="smallGraphs">
+        <div id="smallGraphs" >
+
           <Row className="justify-content-center">
             <div className='doughnut-charts-container'>
               <div className= "doughnutChart" style={{width: '25%', height: '25%'}}>
                 <Doughnut01 />
+                <h4>Seating</h4>
               </div>
               <div className= "doughnutChart" style={{width: '25%', height: '25%'}}>
                 <Doughnut02 />

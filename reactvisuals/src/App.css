@@ -76,24 +76,10 @@
   margin: auto;
 }
 
-.smallGraphs{
-  width: 1500px;
-  margin: auto;
-  
-}
-
 #bigGraph{
   width: 70%;
   background-color: #282c34;
   margin: auto;
-  border-radius: 32px;
-  margin-top: 80px;
-  padding: 50px;
-}
-
-#smallGraph{
-  width: 200px;
-  background-color: #282c34;
   border-radius: 32px;
   margin-top: 80px;
   padding: 50px;
@@ -339,15 +325,16 @@ canvas {
 
 .doughnut-charts-container {
   display: flex;
-  padding-top: 100px;
-  justify-content: space-around; /* Adjusts the space between the charts */
+  width: 400px;
+  justify-content: space-around; 
 }
 
-.doughnutChart{
-  width: 200px;
-  height: 400px;
+
+#smallGraphs{
+  width: 80%;
   background-color: #282c34;
   border-radius: 32px;
-  margin-top: 80px;
+  margin: auto;
   padding: 50px;
+  margin-top: 80px;
 }

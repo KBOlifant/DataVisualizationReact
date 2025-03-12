@@ -8,7 +8,7 @@ const DoughnutChart = () => {
         labels: ['First', 'Business', 'Premium Economy', 'Economy'],
         datasets: [
             {
-                label: '# of Votes',
+                label: '# of Seats',
                 data: [14, 70, 60, 341],
                 backgroundColor: [
                     '#605661',
@@ -30,10 +30,10 @@ const DoughnutChart = () => {
     const options = {
         plugins: {
             legend: {
-                display: false, // Disable the legend
+                display: true, // Disable the legend
             },
             tooltip: {
-                enabled: false, // Disable the tooltips
+                enabled: true, // Disable the tooltips
             },
         },
     };
