@@ -16,7 +16,7 @@ const IAS = () => {
     labels: ['Take-off', 'Initial Climb (to 5000ft)', 'Initial Climb (to FL240)', 'Cruise', 'Descent (to FL100)', 'Approach'],
     datasets: [
       {
-        label: 'Ability Scores',
+        label: 'IAS (Indicated Air Speed) per flight level',
         data: A388IAS, // Example ability scores
         borderColor: 'rgba(8, 202, 206, 1)', // Border color
         borderWidth: 3, // Border width
@@ -77,14 +77,9 @@ const IAS = () => {
   };
 
   return (
-    <Card>
-      <Card.Body className="IASBody">
-        <Card.Title className="IAS-title">IAS (Indicated Air Speed) per flight level</Card.Title>
-        <div className="IAS-container">
-          <Radar data={data} options={options} />
-        </div>
-      </Card.Body>
-    </Card>
+    <div className="IAS-container">
+      <Radar data={data} options={options} />
+    </div>
   );
 };
 

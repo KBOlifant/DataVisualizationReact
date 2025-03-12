@@ -7,6 +7,7 @@ import Cards from './components/Cards';
 import "@fontsource/quicksand";
 import HeroSection from './components/hero';
 import RadarSection from './components/radar';
+import Row from "react-bootstrap/esm/Row";
 
 function App() {
   return (
@@ -32,13 +33,14 @@ function App() {
           <h4 className='pt-4'>some more text</h4>
         </div>
         
-        <div className="bigGraph">
+        <div id="bigGraph">
           <div className="radar">
             <RadarSection />
           </div>
         </div>
-        <div className="smallGraph">
+        <div className="smallGraphs">
 
+          
         </div>
       </section>
     </div>
