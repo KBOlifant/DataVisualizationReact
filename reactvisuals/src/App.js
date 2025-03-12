@@ -1,13 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import HeroSection from './components/hero';
+import RadarSection from './components/radar';
 
 function App() {
   return (
     <div className="App">
-      <section className="Hero">
-        <h1>Hero</h1>
-        
-      </section>
+        <div className="hero">
+          <HeroSection />
+        </div>
+
+        <div className="radar">
+          <RadarSection />
+          </div>
     </div>
   );
 }
