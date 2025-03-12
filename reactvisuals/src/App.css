@@ -28,6 +28,44 @@
   color: #61dafb;
 }
 
+.HeroSection{
+  background-color: #605661;
+  height: 500px;
+}
+
+.cardSection{
+  background-color: #E7DAE3;
+  padding-bottom: 150px;
+}
+
+.dataAnalysisSection{
+  background-color: #605661;
+}
+
+.data-Section-Title{
+  padding-top: 100px;
+}
+
+.card-Section-Title{
+  padding-top: 150px;
+}
+
+.cards{
+  padding-top: 40px;
+  width: 80%;
+  margin: auto;
+}
+
+.bigGraph{
+  width: 70%;
+  height: 700px;
+  background-color: #282c34;
+  margin: auto;
+  border-radius: 32px;
+  margin-top: 80px;
+  padding: 200px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
