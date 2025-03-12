@@ -4,14 +4,16 @@ import React from 'react';
 import Bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cards from './components/Cards';
-import "@fontsource/quicksand";
+import Quicksand from "@fontsource/quicksand";
 import HeroSection from './components/hero';
 import RadarSection from './components/radar';
 import Row from "react-bootstrap/esm/Row";
+import Doughnut01 from './components/Doughnut01';
+import Doughnut02 from './components/Doughnut02';
 
 function App() {
   return (
-    <div className="App" style={{fontFamily: "Quicksand"}}>
+    <div className="App" style={{fontFamily: "Quicksand"}} >
       <section className="HeroSection">
         <div className="hero">
           <HeroSection />
@@ -38,9 +40,19 @@ function App() {
             <RadarSection />
           </div>
         </div>
-        <div className="smallGraphs">
+        <div id="smallGraphs" >
 
-          
+          <Row className="justify-content-center">
+            <div className='doughnut-charts-container'>
+              <div className= "doughnutChart" style={{width: '25%', height: '25%'}}>
+                <Doughnut01 />
+                <h4>Seating</h4>
+              </div>
+              <div className= "doughnutChart" style={{width: '25%', height: '25%'}}>
+                <Doughnut02 />
+              </div>
+            </div>
+          </Row>
         </div>
       </section>
     </div>

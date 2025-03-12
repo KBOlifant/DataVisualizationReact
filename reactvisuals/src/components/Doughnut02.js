@@ -5,20 +5,22 @@ import { Doughnut } from 'react-chartjs-2';
 ChartJS.register(ArcElement, Tooltip);
 const DoughnutChart = () => {
     const data = {
-        labels: ['Red', 'Blue', 'Yellow'],
+        labels: ['First', 'Business', 'Premium Economy', 'Economy'],
         datasets: [
             {
                 label: '# of Votes',
-                data: [12, 19, 3],
+                data: [14, 70, 60, 341],
                 backgroundColor: [
-                    '#19BACC',
+                    '#605661',
                     '#D9D9D9',
-                    '#012E57',
+                    '#0F7173',
+                    '#61060e',
                 ],
                 borderColor: [
-                    '#19BACC',
+                    '#605661',
                     '#D9D9D9',
-                    '#012E57',  
+                    '#0F7173', 
+                    '#61060e',
                 ],
                 borderWidth: 1,
             },

@@ -76,12 +76,6 @@
   margin: auto;
 }
 
-.smallGraphs{
-  width: 1500px;
-  margin: auto;
-  
-}
-
 #bigGraph{
   width: 70%;
   background-color: #282c34;
@@ -89,43 +83,6 @@
   border-radius: 32px;
   margin-top: 80px;
   padding: 50px;
-}
-
-#smallGraph{
-  width: 200px;
-  background-color: #282c34;
-  border-radius: 32px;
-  margin-top: 80px;
-  padding: 50px;
-}
-
-#subjectTitle{
-  border-bottom-width: 2px;
-  border-color: #72091f;;
-  border-bottom-style: solid;
-  width: 90%;
-  margin: auto;
-  margin-bottom: 30px;
-  padding-bottom: 16px;
-  font-weight: 900;
-  text-shadow: 2px 2px 2px#838383;
-}
-
-#sectionTitle{
-  border-bottom-width: 2px;
-  border-color: #18999b;;
-  border-bottom-style: solid;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 30px;
-  padding-bottom: 16px;
-}
-
-.cardIMG{
-  padding: 10px;
-  border-bottom-width: 2px;
-  border-bottom-color: #4ab9bb;
-  border-bottom-style: solid;
 }
 
 .homeCards{
@@ -356,4 +313,20 @@ canvas {
   color: white; /* White text for tooltip */
   font-size: 14px; /* Adjust font size */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+.doughnut-charts-container {
+  display: flex;
+  width: 400px;
+  justify-content: space-around; 
+}
+
+
+#smallGraphs{
+  width: 80%;
+  background-color: #282c34;
+  border-radius: 32px;
+  margin: auto;
+  padding: 50px;
+  margin-top: 80px;
 }
