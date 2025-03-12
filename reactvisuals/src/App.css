@@ -99,9 +99,38 @@
   padding: 50px;
 }
 
+#subjectTitle{
+  border-bottom-width: 2px;
+  border-color: #72091f;;
+  border-bottom-style: solid;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+  padding-bottom: 16px;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px#838383;
+}
+
+#sectionTitle{
+  border-bottom-width: 2px;
+  border-color: #18999b;;
+  border-bottom-style: solid;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+  padding-bottom: 16px;
+}
+
+.cardIMG{
+  padding: 10px;
+  border-bottom-width: 2px;
+  border-bottom-color: #4ab9bb;
+  border-bottom-style: solid;
+}
+
 .homeCards{
-  box-shadow: 10px 10px 5px #282c34;
-  transition: transform 0.3s;
+  box-shadow: 10px 10px 5px #282c3498;
+  transition: transform 0.3s, box-shadow 0.2s;
 }
 
 .homeCards:hover{
@@ -138,7 +167,7 @@ body{
   justify-content: space-between;
   padding: 50px;
   background-color: #E7DAE3;
-  border-radius: 10px;
+  border-radius: 100px;
 }
 
 .hero-content {
@@ -155,14 +184,6 @@ body{
   color: #2c2c2c;
   width: 80%;
   margin: auto;
-}
-
-.hero-image {
-  max-width: 40%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: block; /* Ensure the image is a block-level element */
-  margin: 0 auto; /* Center horizontally */
 }
 
 /*radar*/
@@ -267,10 +288,10 @@ body{
 
 .hero-image {
   max-width: 40%;
-  border-radius: 10px;
+  border-radius: 32px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: block; /* Ensure the image is a block-level element */
-  margin: 0 auto; /* Center horizontally */
+  display: block;
+  margin: 0 auto;
 }
 
 /*radar*/

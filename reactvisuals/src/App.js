@@ -29,8 +29,8 @@ function App() {
 
       <section className="dataAnalysisSection text-white">
         <div className='data-Section-Title'>
-          <h2>Selected Data analysis</h2>
-          <h4 className='pt-4'>some more text</h4>
+          <h2 id='sectionTitle'>Selected Data analysis</h2>
+          <h4 className='pt-4'>Rader graph</h4>
         </div>
         
         <div id="bigGraph">
