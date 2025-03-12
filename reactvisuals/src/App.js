@@ -1,15 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cards from './components/Cards';
-import Quicksand from "@fontsource/quicksand";
 import HeroSection from './components/hero';
 import RadarSection from './components/radar';
 import Row from "react-bootstrap/esm/Row";
 import Doughnut01 from './components/Doughnut01';
 import Doughnut02 from './components/Doughnut02';
+import _lineChart from './components/lineChart';
+import Quicksand from "@fontsource/quicksand";
 
 function App() {
   return (
@@ -40,20 +39,31 @@ function App() {
             <RadarSection />
           </div>
         </div>
-        <div id="smallGraphs" >
 
-          <Row className="justify-content-center">
-            <div className='doughnut-charts-container'>
-              <div className= "doughnutChart" style={{width: '25%', height: '25%'}}>
-                <Doughnut01 />
-                <h4>Seating</h4>
+        <div className='graphlowerH'>
+          <div className="smallGraphs" >
+            <Row className="justify-content-center">
+              <div>
+                <div className= "doughnutChart">
+                  <Doughnut01 />
+                  <h4 className='pt-4'>Seating</h4>
+                </div>
               </div>
-              <div className= "doughnutChart" style={{width: '25%', height: '25%'}}>
-                <Doughnut02 />
+            </Row>
+          </div>
+
+          <div className="smallGraphs">
+            <Row className="justify-content-center">
+              <div>
+                <div className= "doughnutChart">
+                  <_lineChart />
+                  <h4 className='pt-4'>Cost</h4>
+                </div>
               </div>
-            </div>
-          </Row>
+            </Row>
+          </div>
         </div>
+        
       </section>
     </div>
   );
