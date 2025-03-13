@@ -17,12 +17,15 @@ ChartJS.register(
 )
 
 const lineChartData = () =>{
+    const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const dataset1 = labels.map(() => Math.floor(Math.random() * (110000 - 90000)) + 90000)
     const data ={
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        
+        labels: labels,
         datasets: [{
             label: 'Cost in a year',
             labels: 'Sales of the Week',
-            data: [100220, 110050, 120000, 140000, 123520, 135053, 103503, 130550, 130501, 130500, 130501, 100224],
+            data: dataset1,
             backgroundColor: '#FFFFFF55',
             borderColor: 'white',
             pointBorderColor: 'white',
