@@ -18,15 +18,19 @@ ChartJS.register(
 
 const lineChartData = () =>{
     const data ={
-        labels: ['Mon', 'Tue', 'Wed'],
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         datasets: [{
+            label: 'Cost in a year',
             labels: 'Sales of the Week',
-            data: [6, 3, 9],
-            backgroundColor: 'red',
-            borderColor: 'black',
-            pointBorderColor: 'none',
+            data: [100220, 110050, 120000, 140000, 123520, 135053, 103503, 130550, 130501, 130500, 130501, 100224],
+            backgroundColor: '#FFFFFF55',
+            borderColor: 'white',
+            pointBorderColor: 'white',
             fill: true,
-            tension: 0.4
+            tension: 0.4,
+            pointStyle: 'circle',
+            pointRadius: 10,
+            pointHoverRadius: 15
             }
         ]
     }
